@@ -5,6 +5,43 @@
 /*fecha: octubre 2023                            */
 /*comentarios: ejercicio para portfolio(I)      */
 /***********************************************/
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family:textotitulo;
+  src: url(../fonts/Lusiana.OTF.otf);
 }
+@font-face {
+  font-family:Texto2;
+  src: url(../fonts/SFCartoonistHand.ttf);
+}
+  
+
+* {box-sizing: border-box; }
+
+/*3) estructura layout general*/
+
+body {background-image: url("../img/\'Fast\ food\ Mexican\'\ Poster\ by\ Iraida\ Bearlala\ _\ Displate.jpeg");
+      font-family:Texto2;
+      font: size 1.5em;;}
+#wrapper {background-color: #fff;
+  box-shadow:1px 70px 70px 1px whitesmoke;
+  width: 80%;
+  margin:auto;
+  padding:3%;}
+
+h1{font-family:textotitulo;
+      text-align: center;                           /*si quisiera que esten centrados*/
+      border-bottom: 2px solid rgb(222, 95, 106);         /*si quieres que tengan borde*/
+      width: 80%;
+      margin: auto;
+      padding: 10px;
+      margin-bottom:40px;}                            
+                                                      /* margin auto para centrar el borde*/
+h1{font-size:3.5em;}
+h2{font-size:2.5em;}
+
+
+
+
+
+
+/*4 section a section ( si las hubiera) en detalle */
