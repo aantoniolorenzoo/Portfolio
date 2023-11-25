@@ -5,6 +5,19 @@
     min-width: 100%;
     min-height: 100%;
 }
+.texto{
+    position: absolute;
+        top: 810px;
+        left: 580px;
+        text-align: center;
+        font-family: texto1;
+        color: rgb(245, 244, 242);
+        margin: 0;
+        padding: 0;
+        padding: 5vh 0px;
+        font-size: 85px;
+        
+}
 .content {
     position: fixed;
     bottom: 0;

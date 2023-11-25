@@ -1,5 +1,58 @@
+@font-face{
+        font-family: texto1;
+        src:url(../fonts/Crucial\ Noise.otf);
+        
+}
+@font-face{
+        font-family: texto2;
+        src:url(../fonts/Deicide\ Remain.otf);
+        
+}
 
+.textoPrincipal{
+        position: absolute;
+        top: 810px;
+        left: 580px;
+        text-align: center;
+        font-family: texto1;
+        color: rgb(230, 138, 0);
+        margin: 0;
+        padding: 0;
+        padding: 5vh 0px;
+        font-size: 85px;
+        animation: cambioColor 5s infinite alternate;
+}
+.textoSecundario{
+        position: absolute;
+        top:5px;
+        left: 50px;
+        text-align: center;
+        font-family: texto2;
+        color: orange;
+        margin: 0;
+        padding: 0;
+        font-size: 60px;
+
+}
+@keyframes cambioColor {
+        0% {
+                color: rgb(230, 138, 0);
+        }
+        25% {
+                color: rgb(255, 251, 0);
+        }
+        50% {
+                color: rgb(255, 0, 0);
+        }
+        75% {
+                color: rgb(124, 252, 0);
+        }
+        100% {
+                color: rgb(231, 39, 231);
+        }
+}
 body{background-color:#1C1816;}
+
 #scenario {background-image:url(../img/Halloween-Wallpaper-Graphics-81227404-1.jpg);
                 width: 1575px;
                 height: 1050px;
@@ -68,6 +121,7 @@ body{background-color:#1C1816;}
                 top:45px;
                 left:1050px;
                 visibility:hidden;} 
+
 
 
 

@@ -4,38 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hallowen</title>
-    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
     <link rel="stylesheet" href="./css/Hallowen.css" />
     <script src="./js/Hallowen.js"></script>
   </head>
-  
+
   <body id="scenario">
-    <div >
-        <!--lers sensible area -->                                                   
-        <div id="pumpkin" onmouseover="show('spider');sound('spidersound')" onmouseout="hide('spider')"> 
-        </div>
-        <div id="tree" onmouseover="show('ghosthorse');sound('ghosthorse')" onmouseout="hide('ghosthorse')">
-        </div>
-        <div id="moon" onmouseover="show('witch');sound('witch')" onmouseout="hide('witch')"></div>
-        <div id="tree2" onclick="show('arañaMovimiento');sound('arañaMovimiento')"onmouseout="hide('arañaMovimiento')">
-        </div>
-        <!--lers sensible area2-->
-        
+    <section class="textoPrincipal">
+        <p>
+          ¿Sobreviviras?
+        </p>
+    </section>
+    <section class="textoSecundario">
+        <p>
+          La luna esta muy reluciente ¿no crees?
+        </p>
+    </section>
+    <div>
+      <!--lers sensible area -->
+      <div
+        id="pumpkin"
+        onmouseover="show('spider');sound('spidersound')"
+        onmouseout="hide('spider'); pause('spidersound')"
+      ></div>
+      <div
+        id="tree"
+        onmouseover="show('ghosthorse');sound('caballofantasma')"
+        onmouseout="hide('ghosthorse'); pause('ghosthorse')"
+      ></div>
+      <div
+        id="moon"
+        onmouseover="show('witch');sound('witch1')"
+        onmouseout="hide('witch'); pause('witch1')"
+      ></div>
+      <!--lers sensible area2-->
     </div>
-    <img id="spider" src="./img/spider.gif" alt="">
-      <audio id="spidersound">
-      <source src=""type="audio.mp3">
-      </audio>
-    <img id="ghosthorse" src="./img/caballofantasma.gif" alt="">  
-      <audio id="spidersound">
-      <source src=""type="audio.mp3">
-      </audio>
-    <img id="witch" src="img/bruja-02.gif" alt="">
+    <img id="spider" src="./img/spider.gif" alt="" />
     <audio id="spidersound">
-      <source src=""type="audio.mp3">
-      </audio>
-    <img id="arañaMovimiento" src="img/arañaMovimiento.gif" alt="">
-    
-    
-</body>
+      <source src="./sounds/pasosaraña.mp3" type="audio/mp3" />
+    </audio>
+
+    <img id="ghosthorse" src="./img/caballofantasma.gif" alt="" />
+    <audio id="caballofantasma">
+      <source src="./sounds/HorseSound.mp3" type="audio/mp3" />
+    </audio>
+
+    <img id="witch" src="img/bruja-02.gif" alt="" />
+    <audio id="witch1">
+      <source src="./sounds/witchSound.mp3" type="audio/mp3" />
+    </audio>
+    <img id="arañaMovimiento" src="img/arañaMovimiento.gif" alt="" />
+  </body>
 </html>
